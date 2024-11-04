@@ -13,6 +13,11 @@ You can install the required libraries using pip:
 ```bash
 pip install opencv-python cvzone
 ```
+**Note:** install mediapipe if not install automatically
+```bash
+pip install mediapipe
+```
+
 ## Scripts
 ### 1. Video Pose Detection from File
 This script reads a video file and utilizes a pose detector to identify and log the pose landmarks in each frame. The detected landmarks are saved to a file named AnimationFile.txt when the 's' key is pressed.
@@ -31,7 +36,7 @@ cap = cv2.VideoCapture("path_to_your_video_file.mp4")
 
 **2. Run the script:**
 ```bash
-python video_pose_detection.py
+python file_name.py
 ```
 **3. Press 's' to save the landmark data and 'q' to exit.**
 
@@ -47,7 +52,7 @@ This script captures video from the default webcam and detects movement. When mo
 
 **1. Run the script:**
 ```bash
-python movement_detection.py
+python file_name.py
 ```
 **2. Move in front of the webcam to trigger detection. Press 's' to save the landmark data and 'q' to exit.**
 
