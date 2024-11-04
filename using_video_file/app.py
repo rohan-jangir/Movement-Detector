@@ -1,7 +1,7 @@
 import cv2
 from cvzone.PoseModule import PoseDetector
 
-cap = cv2.VideoCapture("C:\\Users\\rohan\\OneDrive\\Desktop\\data science\\capstone projects\\movement_detect\\test.mp4")
+cap = cv2.VideoCapture("test.mp4")
 
 if not cap.isOpened():
     print("Error: Could not open video file.")
